@@ -4,7 +4,7 @@ pipeline {
 
     environment {
         RUNNER_IMAGE = 'grade-runner:v1'
-        REPORT_DIR = "${WORKSPACE}/reports"
+        REPORT_DIR = "${WORKSPACE}\\reports"
     }
 
     stages {
@@ -17,21 +17,21 @@ pipeline {
 
         stage('Pull Image') {
             steps {
-                sh 'docker images'
+                bat 'docker images'
             }
         }
 
         stage('Run Tests') {
             steps {
 
-                sh 'mkdir -p ${REPORT_DIR}'
+                bat "if not exist %REPORT_DIR% mkdir %REPORT_DIR%"
 
-                sh '''
-                docker run --rm \
-                -v ${WORKSPACE}:/app \
-                -v ${REPORT_DIR}:/app/target/surefire-reports \
-                -w /app \
-                ${RUNNER_IMAGE} mvn test
+                bat '''
+                docker run --rm ^
+                -v "%WORKSPACE%:/app" ^
+                -v "%REPORT_DIR%:/app/target/surefire-reports" ^
+                -w /app ^
+                %RUNNER_IMAGE% mvn test
                 '''
             }
         }
