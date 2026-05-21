@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-21T09:31:44 UTC" name="Surefire suite" finished-at="2026-05-21T09:32:09 UTC" duration-ms="25035">
+    <groups>
+    </groups>
+    <test started-at="2026-05-21T09:31:44 UTC" name="Surefire test" finished-at="2026-05-21T09:32:09 UTC" duration-ms="25035">
+      <class name="csv302.GradeApiTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:csv302.GradeApiTest@62e136d3]" started-at="2026-05-21T09:31:44 UTC" name="setup" finished-at="2026-05-21T09:31:51 UTC" duration-ms="6148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createPostTest()[pri:0, instance:csv302.GradeApiTest@62e136d3]" started-at="2026-05-21T09:31:51 UTC" name="createPostTest" finished-at="2026-05-21T09:32:06 UTC" duration-ms="15706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPostTest -->
+        <test-method signature="deletePostTest()[pri:0, instance:csv302.GradeApiTest@62e136d3]" started-at="2026-05-21T09:32:06 UTC" name="deletePostTest" finished-at="2026-05-21T09:32:07 UTC" duration-ms="1046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePostTest -->
+        <test-method signature="getAllPostsTest()[pri:0, instance:csv302.GradeApiTest@62e136d3]" started-at="2026-05-21T09:32:07 UTC" name="getAllPostsTest" finished-at="2026-05-21T09:32:08 UTC" duration-ms="777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllPostsTest -->
+        <test-method signature="getInvalidPostTest()[pri:0, instance:csv302.GradeApiTest@62e136d3]" started-at="2026-05-21T09:32:08 UTC" name="getInvalidPostTest" finished-at="2026-05-21T09:32:09 UTC" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInvalidPostTest -->
+        <test-method signature="getSinglePostTest()[pri:0, instance:csv302.GradeApiTest@62e136d3]" started-at="2026-05-21T09:32:09 UTC" name="getSinglePostTest" finished-at="2026-05-21T09:32:09 UTC" duration-ms="587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSinglePostTest -->
+      </class> <!-- csv302.GradeApiTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
